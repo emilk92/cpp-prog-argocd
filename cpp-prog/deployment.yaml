@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cpp-prog
+spec:
+  replicas: 4
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: cpp-prog
+  template:
+    metadata:
+      labels:
+        app: cpp-prog
+    spec:
+      containers:
+        - image: ghcr.io/emilk92/cpp-prog-docker:latest
+          name: cpp-prog-docker
+          ports:
+          - containerPort: 3000
