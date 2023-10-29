@@ -12,5 +12,5 @@ data:
   #   login - allows to login using UI
   accounts.argouser: apiKey, login
   # disables user. User is enabled by default
-  accounts.argouser.enabled: "false"
+  accounts.argouser.enabled: "true"
 
