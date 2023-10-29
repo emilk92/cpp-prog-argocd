@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker:1.1.4
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker:1.1.5
   name: cpp-prog
   namespace: argocd
 spec:
@@ -11,7 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: cpp-prog
-    repoURL: https://github.com/emilk92/cpp-prog-argocd
-    targetRevision: HEAD
+    kustomize:
+      path: cpp-prog
+      repoURL: https://github.com/emilk92/cpp-prog-argocd
+      targetRevision: HEAD
 
