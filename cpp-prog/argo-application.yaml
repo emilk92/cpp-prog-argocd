@@ -13,8 +13,12 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    repoURL: https://github.com/emilk92/cpp-prog-argocd
+    path: cpp-prog
     kustomize:
-      path: cpp-prog
-      repoURL: https://github.com/emilk92/cpp-prog-argocd
+      namePrefix: kustomize-
+      namespace: default
       targetRevision: HEAD
+      images:
+        - cpp-image=ghcr.io/emilk92/cpp-prog-docker:1.1.7
 
