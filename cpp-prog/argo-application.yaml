@@ -20,7 +20,7 @@ spec:
       namespace: default
       targetRevision: HEAD
       images:
-        - cpp-image=ghcr.io/emilk92/cpp-prog-docker
+        - ghcr.io/emilk92/cpp-prog-docker
   syncPolicy:
     automated:
       prune: true
