@@ -5,3 +5,4 @@ resources:
 namePrefix: kustomize-
 images:
   - name: cpp-prog-docker
+    newTag: 1.1.7
