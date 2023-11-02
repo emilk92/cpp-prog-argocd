@@ -14,13 +14,9 @@ spec:
   project: default
   source:
     repoURL: https://github.com/emilk92/cpp-prog-argocd
-    path: ./cpp-prog
     kustomize:
-      namePrefix: kustomize-
+      path: ./cpp-prog
       namespace: default
-      targetRevision: HEAD
-      images:
-        - ghcr.io/emilk92/cpp-prog-docker
   syncPolicy:
     automated:
       prune: true
