@@ -3,8 +3,8 @@ kind: Application
 metadata:
   annotations:
     argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker:latest
-    argocd-image-updater.argoproj.io/cpp-image.update-strategy: latest
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker
+    argocd-image-updater.argoproj.io/cpp-image.update-strategy: semver
   name: cpp-prog-app
   namespace: argocd
 spec:
