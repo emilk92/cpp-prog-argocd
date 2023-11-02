@@ -3,7 +3,7 @@ kind: Application
 metadata:
   annotations:
     argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/emilk92/cpp-prog-docker:latest
     argocd-image-updater.argoproj.io/cpp-image.update-strategy: latest
   name: cpp-prog-app
   namespace: argocd
@@ -18,8 +18,6 @@ spec:
     kustomize:
       namespace: default
       namePrefix: kustomize-
-      images:
-        - name: ghcr.io/emilk92/cpp-prog-docker
   syncPolicy:
     automated:
       prune: true
