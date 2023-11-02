@@ -4,4 +4,4 @@ resources:
 - deployment.yaml
 namePrefix: kustomize-
 images:
-  - name: emilk92/cpp-prog-docker
+  - name: cpp-prog-docker
