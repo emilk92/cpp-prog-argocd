@@ -14,7 +14,7 @@ spec:
         app: cpp-prog
     spec:
       containers:
-        - image: ghcr.io/emilk92/cpp-prog-docker
+        - image: ghcr.io/emilk92/cpp-prog-docker:1.1.5
           name: cpp-prog-docker
           imagePullPolicy: Always
           ports:
