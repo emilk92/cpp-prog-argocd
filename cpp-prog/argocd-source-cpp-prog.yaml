@@ -8,7 +8,7 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: myimage=emilk92/cpp-prog-docker:1.1.x
     argocd-image-updater.argoproj.io/argocd.kustomize.image-name: emilk92/cpp-prog-docker
   name: cpp-prog
-  namespace: default
+  namespace: argocd
 spec:
   destination:
     namespace: default
