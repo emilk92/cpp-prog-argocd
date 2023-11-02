@@ -16,6 +16,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/emilk92/cpp-prog-argocd
+    targetRevision: HEAD
     path: cpp-prog
     kustomize:
       namespace: default
