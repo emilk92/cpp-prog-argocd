@@ -23,7 +23,7 @@ spec:
       namespace: default
       namePrefix: kustomize-
       images:
-      - ghcr.io/emilk92/cpp-prog-docker:1.1.8
+      - ghcr.io/emilk92/cpp-prog-docker:latest
   syncPolicy:
     automated:
       prune: true
