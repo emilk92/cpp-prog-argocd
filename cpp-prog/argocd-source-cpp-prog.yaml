@@ -3,11 +3,10 @@ kind: Application
 metadata:
   annotations:
     argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/git-branch: master
+      #argocd-image-updater.argoproj.io/git-branch: master
       #argocd-image-updater.argoproj.io/write-back-target: "kustomization:./cpp-prog"
-    argocd-image-updater.argoproj.io/update-strategy: latest
     argocd-image-updater.argoproj.io/image-list: myimage=emilk92/cpp-prog-docker
-    argocd-image-updater.argoproj.io/argocd.kustomize.image-name: emilk92/cpp-prog-docker
+      #    argocd-image-updater.argoproj.io/argocd.kustomize.image-name: emilk92/cpp-prog-docker
   name: cpp-prog
   namespace: argocd
 spec:
