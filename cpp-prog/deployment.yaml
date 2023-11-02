@@ -16,5 +16,6 @@ spec:
       containers:
         - image: ghcr.io/emilk92/cpp-prog-docker
           name: cpp-prog-docker
+          imagePullPolicy: Always
           ports:
           - containerPort: 3000
