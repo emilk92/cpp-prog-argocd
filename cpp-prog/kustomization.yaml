@@ -5,4 +5,4 @@ resources:
 namePrefix: kustomize-
 images:
   - name: emilk92/cpp-prog-docker
-    tag: latest
+    newTag: latest
