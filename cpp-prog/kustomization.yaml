@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 namePrefix: "kustomize-"
 images:
-  - name: emilk92/cpp-prog-docker
+  - name: ghcr.io/emilk92/cpp-prog-docker
     newTag: latest
